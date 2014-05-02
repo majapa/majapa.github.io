@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Don't delete history</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/jquery.fullPage.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <style type="text/css">
+    #images {
+      white-space: nowrap;
+      display: inline;
+    }
+
+    .table-container {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    height: 100%;
+}
+#section0 {
+  width: 100%;
+}
+#section1 {
+  background-color: #ededf0;
+  width: 100%;
+}
+h1, h2, h3, h4, h5 {
+  font-family: Adelle,"American Typewriter Regular",Iowan,Charter,Baskerville,"Big Caslon",Cochin,Didot,Georgia;
+  text-transform: uppercase;
+}
+p {
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+
+input[type=submit] {
+    background: url(images/submit.png);
+    border: 0;
+    display: block;
+    width: 155px;
+    height: 35px;
+    margin-top: 3px;
+}
+input {
+  background: rgba(237,237,240,1);
+  border: 0px;
+  height: 30px;
+}
+    </style>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="padding-bottom: 30px;">
+
+<div id="fullpage">
+  <div class="section" id="section0">
+    <nav class="navbar" role="navigation">
+      <div class="container">
+          <ul class="nav navbar-left pull-left">
+            <li class="pull-left"><a href="https://www.facebook.com/TexasFreedomNetwork" target="_blank">
+              <img src="images/facebook-b.gif" alt="Texas Freedom Network on Facebook" class="img-responsive"></a></li>
+            <li class="pull-left"><a href="https://twitter.com/tfn" target="_blank">
+              <img src="images/twitter-b.gif" alt="Texas Freedom Network on Twitter" class="img-responsive"></a></li>
+            <li class="pull-left" ><a href="http://instagram.com/txfreedomnetwork" target="_blank">
+              <img src="images/instagram-b.gif" alt="Texas Freedom Network on Instagram" class="img-responsive"></a></li>
+          </ul>
+          <ul class="nav navbar-right pull-right">
+            <li class="img-responsive"><a href="#" target="_blank"><img src="images/Donate2.gif" alt="Donate to Texas Freedom Network" class="img-responsive"></a></li>
+          </ul>
+      </div>
+    </nav>
+
+<!-- Original placement of div container -->
+<!--
+<div class="row">
+<div class="col-md-2 col-md-offset-1" style="display: block;"><a href="https://www.facebook.com/TexasFreedomNetwork" target="_blank"><img src="images/facebook-b.gif" class="img-responsive"></a><a href="https://twitter.com/tfn" target="_blank"><img src="images/twitter-b.gif" class="img-responsive"></a><a href="http://instagram.com/txfreedomnetwork" target="_blank"><img src="images/instagram-b.gif" class="img-responsive"></a>
+</div>
+<div class="col-md-1 col-md-offset-7"><a href="#" target="_blank"><img src="images/Donate2.gif" class="navbar-pic"></a>
+</div>
+</div>
+-->
+    <div class="container-fluid">
+      <div class="row" style="margin-top: -75px;">
+        <a name="homepetition"></a>  <div class="col-md-12 col-sm-12">
+          <img src="images/TFN-TexasDELETE-logo-dividers.gif" alt="Those who don't know history are destined to delete it" width="700" class="center-block img-responsive">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3 class="text-center">Sign the <span style="color: red;">petition</span>.</h3>
+
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-4 col-md-offset-2">
+
+          <div>
+         <p></p>
+ <p class="text-center center-block"><form method="POST" action="http://www.tfn.org/site/Survey" style="width: 400px;" class="text-center center-block">
+ <input type="hidden" name="cons_info_component" id="cons_info_component" value="t" />
+ <input type="text" name="cons_first_name" id="cons_first_name" size="32" maxlength="50" value="First name" onFocus="if(this.value == 'First name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'First name';}" style="width: 175px; margin-bottom: 3px;" class="center-block" />
+ <input type="text" name="cons_last_name" id="cons_last_name" size="32" maxlength="50" value="Last name" onFocus="if(this.value == 'Last name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Last name';}" style="width: 175px; margin-bottom: 3px;" class="center-block" />
+ <input type="text" name="cons_email" id="cons_email" size="32" maxlength="255" value="Email" onFocus="if(this.value == 'Email') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Email';}" style="width: 175px; margin-bottom: 3px;" class="center-block" />
+ <input type="text" name="cons_zip_code" id="cons_zip_code" size="32" maxlength="255" value="Zip" onFocus="if(this.value == 'Zip') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Zip';}" style="width: 100px; margin-bottom: 35px;" class="center-block" />
+ <span class="hidden"><input type="text" name="denySubmit" id="denySubmit" value="" alt="This field is used to prevent form submission by scripts." />&nbsp;Please leave this field empty</span>
+ <input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="4001" />
+ <br />
+ <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="" class="center-block newsletter_signup_button img-responsive" />
+ </form></p>
+         </div>
+
+        </div>
+
+        <div class="col-md-4">
+          <p>Texas students need classroom materials that offer an accurate portrayal of history and are free of political agendas. Politicians on the board must stop trying to undermine the work of scholars and mainstream historians. They should approve social studies textbooks that are based on sound scholarship.</p>
+           <p><br /><a href="#more"><img src="images/LearnMore.png" class="img-responsive center-block" width="200"></a></p>
+       </div>
+
+     </div>
+
+   </div><!-- close of container div -->
+</div>
+
+ <div class="section" id="section1"><a name="more"></a>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <h2 class="text-center" style="text-transform: uppercase;">We can't let extremists <span style="color: red;">re-write</span> history.</h2>
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+<p>Four years ago, a far-right group of Texas State Board of Education members went on the attack against our history. Those members voted to portray the separation of church and state as a myth. They voted to diminish the role of
+slavery as a cause for the Civil War. They voted to downplay the contributions of Mexican-Americans, women and other
+ minorities in America's history.</p>
+<p>
+This year the board will use those biased standards to approve new social studies textbooks for the state's public schools. That means the board's radicals will insist that textbooks portray their view of history.
+</p>
+        </div>
+        <div class="col-md-4">
+<p>
+The process of approving the new books is already underway and will conclude with a final board vote in November. From now until then, the Texas Freedom Network will embark on a campaign to ensure that textbooks used by Texas' public school children are based on the sound scholarship of mainstream historians, and not driven by politicians on the board and their political agendas.</p>
+<p>
+But we can't do this without you and other Texans who believe politics don’t belong in the classroom.</p>
+<p><br /><a href="#homepetition"><img src="images/sign-petition.png" class="img-responsive center-block" width="200"></a>
+<a href="http://www.tfn.org/" target="_blank"><img src="images/tfn-logo.png" width="50" style="position: fixed; bottom: 5px; right: 5px; "></a>
+</p>
+        </div><!-- Closing for column div -->
+     </div><!-- Closing for row div -->
+   </div><!-- Closing for container div -->
+ </div><!-- Closing for section1 id -->
+
+</div><!-- Closing for fullPage id -->
+<!-- <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container">
+    <div class="pull-right">
+
+    </div>
+  </div>
+</nav> -->
+
+      <script>
+  $(document).ready(function() {
+      $('#fullpage').fullpage({
+      scrollingSpeed: 300,
+      scrollOverflow: true,
+    });
+  });
+  </script>
+
+  </body>
+</html>
