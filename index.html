@@ -8,10 +8,10 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<!--    <link href="css/jquery.fullPage.css" rel="stylesheet"> -->
     <link href="css/custom.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 
 
     <style type="text/css">
@@ -20,23 +20,11 @@
       display: inline;
     }
 
-    .table-container {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    height: 100%;
-}
-#section0, #section2 {
-  width: 100%;
-}
-#section1 {
-  background-color: #ededf0;
-  width: 100%;
-}
 h1, h2, h3, h4, h5 {
   font-family: Adelle,"American Typewriter Regular",Iowan,Charter,Baskerville,"Big Caslon",Cochin,Didot,Georgia;
   text-transform: uppercase;
 }
+
 p {
   font-family: "Open Sans";
   font-size: 16px;
@@ -50,6 +38,7 @@ input[type=submit] {
     height: 35px;
     margin-top: 3px;
 }
+
 input {
   background: rgba(237,237,240,1);
   border: 0px;
@@ -87,20 +76,65 @@ sm-icon {
     background: url('images/Texas-delete-xs.png') no-repeat center;
     background-size: 150px;
   }
+  .xs-img {
+    width: 70% !important;
+  }
+}
 
+.nav>li{
+  float: left;
+  padding-right: 5px;
 }
 
 </style>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
-<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
-<!-- <script type="text/javascript" src="js/jquery.fullPage.js"></script> -->
 
+<script src="http://malsup.github.com/jquery.form.js"></script>
 
+    <script>
+
+        $(document).ready(function() {
+if(screen.width < 768) {
+            // bind 'myForm' and provide a simple callback function
+            $('#petition').ajaxForm({
+                target: '#petitionform',
+                success: function() {
+        $('#petitionform').html("<div id=\"message\"></div>");
+        $('#message').html("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4>")
+        .append("<p>Can you share this on Facebook and Twitter?</p>")
+
+      }
+            });
+} else {
+ $('#fullpage').fullpage({
+        verticalCentered: false,
+slidesColor: ['#ffffff', '#ededf0', '#ffffff'],
+loopBottom: true,
+scrollOverflow: true,
+navigation: true,
+css3: true,
+paddingBottom: '40px',
+fixedElements: '.logo',
+});
+
+            // bind 'myForm' and provide a simple callback function
+            $('#petition').ajaxForm({
+                target: '#petitionform',
+                success: function() {
+        $('#petitionform').append("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
+.hide()
+      }
+            });
+}
+        });
+
+    </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -111,20 +145,21 @@ sm-icon {
   <body style="padding-top: 15px; padding-bottom: 30px;">
 
 <div id="fullpage">
-  <div class="section" id="section0">
+
+      <div class="section">
       <div class="container">
-        <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1" style="margin-top: 10px;">
           <nav class="navbar" role="navigation">
             <ul class="nav navbar-nav pull-left">
-              <li>
+              <li style="">
                 <a href="https://www.facebook.com/TexasFreedomNetwork" target="_blank">
-                  <img src="images/Facebook-b.gif"  alt="Texas Freedom Network on Facebook">
+                  <img src="images/Facebook-b.gif" class="xs-img" alt="Texas Freedom Network on Facebook">
                 </a>
               </li>
               <li><a href="https://twitter.com/tfn" target="_blank">
-              <img src="images/Twitter-b.gif"   alt="Texas Freedom Network on Twitter"></a>
+              <img src="images/Twitter-b.gif" class="xs-img" alt="Texas Freedom Network on Twitter"></a>
               </li>
-              <li><a href="http://instagram.com/txfreedomnetwork" target="_blank"><img src="images/Instagram-b.gif" alt="Texas Freedom Network on Instagram" ></a>
+              <li><a href="http://instagram.com/txfreedomnetwork" target="_blank"><img src="images/Instagram-b.gif" class="xs-img" alt="Texas Freedom Network on Instagram" ></a>
               </li>
             </ul>
             <ul class="nav navbar-nav pull-right">
@@ -136,51 +171,56 @@ sm-icon {
             </ul>
           </nav>
         </div>
-
-        <div class="row">
+ <div class="row">
           <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-6 col-md-offset-3">
-            <h3 class="text-center">Sign the <span style="color: red;">petition</span>.</h3>
+            <h3 class="text-center">Sign the <span style="color: red;">petition</span></h3>
           </div>
         </div>
 
         <div class="row">
+<div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
 
-          <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1 col-lg-5 col-lg-offset-1">
-              <br />
-           <form method="POST" action="http://www.tfn.org/site/Survey" style="" class="text-center center-block">
+            <p>Texas students need classroom materials that offer an accurate portrayal of history and are free of political agendas. Politicians on the board must stop trying to undermine the work of scholars and mainstream historians. They should approve social studies textbooks that are based on sound scholarship.</p>
+             <p><a href="#more"><img src="images/LearnMore.png" class="img-responsive center-block" width="155" style="margin-top: 20px;"></a>
+<div class="logo"><a href="http://www.tfn.org/" target="_blank"><img src="images/tfn-logo-transparent.png" width="50" class="hidden-xs" style="position: fixed; bottom: 5px; right: 5px;"></a></div>
+             </p>
+         </div>
+
+<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
+<div id="petitionform">
+           <form method="POST" action="http://www.tfn.org/site/Survey" style="" id="petition" class="text-center center-block">
            <input type="hidden" name="cons_info_component" id="cons_info_component" value="t" />
            <input type="text" name="cons_first_name" id="cons_first_name"  maxlength="50" value="First name" onFocus="if(this.value == 'First name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'First name';}" style="margin-bottom: 3px;" class="center-block" />
+
            <input type="text" name="cons_last_name" id="cons_last_name"  maxlength="50" value="Last name" onFocus="if(this.value == 'Last name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Last name';}" style="margin-bottom: 3px;" class="center-block" />
            <input type="text" name="cons_email" id="cons_email"  maxlength="255" value="Email" onFocus="if(this.value == 'Email') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Email';}" style="margin-bottom: 3px;" class="center-block" />
            <input type="text" name="cons_zip_code" id="cons_zip_code" size="20" maxlength="255" value="Zip" onFocus="if(this.value == 'Zip') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Zip';}" style="margin-bottom: 3px;" class="center-block" />
            <span class="hidden"><input type="text" name="denySubmit" id="denySubmit" value="" alt="This field is used to prevent form submission by scripts." />&nbsp;Please leave this field empty</span>
            <input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="4001" />
            <br />
-           <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="" class="center-block newsletter_signup_button img-responsive" /><br />
-           </form>
+           <input type="submit" name="ACTION_SUBMIT_SURVEY_RESPONSE" id="ACTION_SUBMIT_SURVEY_RESPONSE" value="" class="button center-block newsletter_signup_button img-responsive" /><br />
+         </form>
+</div>
+
           </div>
-          <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
-            <p>Texas students need classroom materials that offer an accurate portrayal of history and are free of political agendas. Politicians on the board must stop trying to undermine the work of scholars and mainstream historians. They should approve social studies textbooks that are based on sound scholarship.</p>
-             <p><a href="#more"><img src="images/LearnMore.png" class="img-responsive center-block" width="155" style="margin-top: 20px;"></a>
-             <a href="http://www.tfn.org/" target="_blank"><img src="images/tfn-logo-transparent.png" width="50" style="position: fixed; bottom: 5px; right: 5px;"></a></p>
-         </div>
+ </div>
 
-       </div>
+
    </div><!-- close of container div -->
-</div><!-- close of section div -->
+ </div><!-- close of section div -->
 
- <div class="section" id="section1"><a name="more"></a>
+ <div class="section">
   <div class="container">
-
+    <a name="more"></a>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2 class="text-center" style="text-transform: uppercase;">We can't let extremists <span style="color: red;">re-write</span> history.</h2>
+      <div class="col-md-6 col-md-offset-3" style="margin-top: 10px;">
+        <h2 class="text-center" style="text-transform: uppercase;">We can't let extremists <span style="color: red;">rewrite</span> history</h2>
       </div>
     </div>
 
     <div class="row">
         <div class="col-md-4 col-md-offset-2">
-<p>Four years ago, a far-right group of Texas State Board of Education members went on the attack against our history. Those members voted to portray the separation of church and state as a myth. They voted to diminish the role of
+<p>Four years ago, a far-right group of Texas State Board of Education members went on the attack against fact-based history. Those members voted to portray the separation of church and state as a myth. They voted to diminish the role of
 slavery as a cause for the Civil War. They voted to downplay the contributions of Mexican-Americans, women and other
  minorities in America's history.</p>
 <p>
@@ -189,22 +229,22 @@ This year the board will use those biased standards to approve new social studie
         </div>
         <div class="col-md-4">
 <p>
-The process of approving the new books is already underway and will conclude with a final board vote in November. From now until then, the Texas Freedom Network will embark on a campaign to ensure that textbooks used by Texas' public school children are based on the sound scholarship of mainstream historians, and not driven by politicians on the board and their political agendas.</p>
+The process of approving the new textbooks is already underway and will conclude with a final board vote in November. From now until then, the Texas Freedom Network will embark on a campaign to ensure that textbooks used by Texas public school children are based on the sound scholarship of mainstream historians, and not driven by politicians on the board and their political agendas.</p>
 <p>
-But we can't do this without you and other Texans who believe politics don’t belong in the classroom.</p>
+But we can't do this without you and other Texans who agree that politics don't belong in the classroom.</p>
 <p><br /><a href="#homepetition"><img src="images/sign-petition.png" class="img-responsive center-block" width="200"></a>
 </p>
         </div><!-- Closing for column div -->
      </div><!-- Closing for row div -->
    </div><!-- Closing for container div -->
- </div><!-- Closing for section1 id -->
+ </div><!-- Closing for section div -->
 
- <div class="section" id="section2"><a name="background"></a>
+<div class="section">
   <div class="container">
-
+<a name="background"></a>
     <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2 class="text-center" style="text-transform: uppercase;">Additional <span style="color: red;">background</span>  reading.</h2>
+      <div class="col-md-6 col-md-offset-3" style="margin-top: 10px;">
+        <h2 class="text-center" style="text-transform: uppercase;">Additional <span style="color: red;">background</span> reading</h2>
       </div>
     </div>
 
@@ -216,13 +256,13 @@ But we can't do this without you and other Texans who believe politics don’t b
         <div class="col-md-4">
 <p>
   <ul>
-    <li>Textbook adoption timeline [TFN pdf]</li>
-    <li>Fact Sheet: How Politics Shaped the Texas Social Studies Textbook Adoption in 2002 [TFN pdf]</li>
-    <li>Social Studies TEKS [http://ritter.tea.state.tx.us/rules/tac/chapter113/index.html]</li>
-    <li>Economics TEKS [http://ritter.tea.state.tx.us/rules/tac/chapter118/index.html]</li>
-    <li>Proclamation 2015 key documents [http://www.tea.state.tx.us/index2.aspx?id=25769804190]</li>
-    <li>Thomas B. Fordham Institute: Review of U.S. History standards from Texas and other states [TFN pdf]</li>
-    <li>Texas Higher Education Coordinating Board’s Social Studies Faculty Collaborative: Review of the U.S. History standards in Texas [TFN pdf]</li>
+    <li><a href="http://www.tfn.org/site/DocServer/Textbook-adoption-timeline.pdf?docID=4521"  target="_blank" style="font-family: 'Open Sans';" >Textbook adoption timeline</a></li>
+    <li><a href="http://www.tfn.org/site/DocServer/Factsheet-Politics-Shaped-TX-Social-Studies.pdf?docID=4522" target="_blank" style="font-family: 'Open Sans';" >Fact Sheet: How Politics Shaped the Texas Social Studies Textbook Adoption in 2002</a></li>
+    <li><a href="http://ritter.tea.state.tx.us/rules/tac/chapter113/index.html" target="_blank" style="font-family: 'Open Sans';" target="_blank" >Social Studies TEKS</a></li>
+    <li><a href="http://ritter.tea.state.tx.us/rules/tac/chapter118/index.html" target="_blank" style="font-family: 'Open Sans';" target="_blank" >Economics TEKS</a></li>
+    <li><a href="http://www.tea.state.tx.us/index2.aspx?id=25769804190" target="_blank" style="font-family: 'Open Sans';" target="_blank" >Proclamation 2015 key documents</a></li>
+    <li><a href="http://www.tfn.org/site/DocServer/Fordham_History_Standards_Review.pdf?docID=4523"  style="font-family: 'Open Sans';" target="_blank" >Thomas B. Fordham Institute: Review of U.S. History standards from Texas and other states</a></li>
+    <li><a href="http://www.tfn.org/site/DocServer/THECB_SS_Collaborative_Review.pdf?docID=4524"  style="font-family: 'Open Sans';" target="_blank" >Texas Higher Education Coordinating Board's Social Studies Faculty Collaborative: Review of the U.S. History standards in Texas</a></li>
   </ul>
 </p>
         </div>
@@ -234,10 +274,9 @@ But we can't do this without you and other Texans who believe politics don’t b
         </div><!-- Closing for column div -->
      </div><!-- Closing for row div -->
    </div><!-- Closing for container div -->
- </div><!-- Closing for section2 id -->
 
-</div><!-- Closing for fullPage id -->
-
+ </div><!-- Closing for section div -->
+</div>
 
 
   </body>

@@ -1,6 +1,7 @@
 # fullPage.js
 
 ![preview](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/intro.png)
+![compatibility](https://raw.github.com/alvarotrigo/fullPage.js/master/examples/imgs/compatible.gif)
 A simple and easy to use plugin to create fullscreen scrolling websites (also known as single page websites).
 It allows the creation of fullscreen scrolling websites, as well as adding some landscape sliders inside the sections of the site.
 
@@ -10,6 +11,8 @@ It allows the creation of fullscreen scrolling websites, as well as adding some 
 
 Invite me to a coffe
 [![Donate](https://www.paypalobjects.com/en_US/GB/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=BEK5JQCQMED4J&lc=GB&item_name=fullPage%2ejs&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+
+Customizations of the plugin available upon request for some reasonable price. <a href="http://alvarotrigo.com/#contact-page">Contact me.</a>
 
 ## Introduction
 Suggestion are more than welcome, not only for feature requests but also for coding style improvements.
@@ -457,15 +460,15 @@ Example:
 ## Who is using fullPage.js
 If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotrigo.com">contact me</a> with the URL
 
-[![Sony](http://wallpapers-for-ipad.com/fullpage/imgs/logos/sony.gif)](http://www.sony-asia.com/microsite/mdr-10/)
-[![Vodafone](http://wallpapers-for-ipad.com/fullpage/imgs/logos/vodafone.png)](https://www.xone.vodafone.com)
-[![docspera](http://wallpapers-for-ipad.com/fullpage/imgs/logos/docspera.png)](http://docspera.com)
-[![strudel](http://wallpapers-for-ipad.com/fullpage/imgs/logos/strudel.jpg)](http://getstrudel.com/)
-[![scribe](http://wallpapers-for-ipad.com/fullpage/imgs/logos/scribe.png)](http://usescribe.com/)
-[![xepler](http://wallpapers-for-ipad.com/fullpage/imgs/logos/xepler.png)](http://xepler.com/services)
-[![matrimonia](http://wallpapers-for-ipad.com/fullpage/imgs/logos/matrimonia.png)](http://www.matrimonia.rs/)
-[![myMattioli](http://wallpapers-for-ipad.com/fullpage/imgs/logos/myMattioli-3.png)](http://mymattioli.it/)
-[![redd](http://wallpapers-for-ipad.com/fullpage/imgs/logos/redd.png)](http://www.getredd.com/)
+[![Sony](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/sony.gif)](http://www.sony-asia.com/microsite/mdr-10/)
+[![Vodafone](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/vodafone.png)](https://www.xone.vodafone.com)
+![docspera](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/docspera.png)
+[![strudel](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/strudel.jpg)](http://getstrudel.com/)
+[![scribe](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/scribe.png)](http://usescribe.com/)
+[![xepler](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/xepler.png)](http://xepler.com/services)
+[![matrimonia](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/matrimonia.png)](http://www.matrimonia.rs/)
+[![myMattioli](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/myMattioli-3.png)](http://mymattioli.it/)
+[![redd](http://wallpapers-for-ipad.com/fullpage/imgs3/logos/redd.png)](http://www.getredd.com/)
 
 - http://www.sony-asia.com/microsite/mdr-10/
 - https://www.xone.vodafone.com
@@ -475,7 +478,6 @@ If you want your page to be listed here. Please <a href="mailto:alvaro@alvarotri
 - http://collection.madeofsundays.com
 - http://jacoberiksson.se/
 - http://patuque.com/santateresa
-- http://docspera.com
 - http://rockercreative.com/
 - http://lawinenstift.com/
 - http://www.thinkecoinc.com/wifi/
