@@ -123,15 +123,21 @@ paddingBottom: '40px',
 fixedElements: '.logo',
 });
 
-            // bind 'myForm' and provide a simple callback function
-            $('#petition').ajaxForm({
-                target: '#petitionform',
-                success: function() {
-        $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
-      }
-            });
+          
 }
         });
+
+$('input#submitButton').click( function() {
+    $.ajax({
+        url: 'https://secure2.convio.net/txfree/site/CRSurveyAPI',
+        type: 'post',
+        dataType: 'json',
+        data: $('form#petition').serialize(),
+        success: function(data) {
+                   $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
+                 }
+    });
+});
 
     </script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
