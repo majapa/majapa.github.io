@@ -127,17 +127,23 @@ fixedElements: '.logo',
 }
         });
 
-$('input#submitButton').click( function() {
-  preventDefault();
-    $.ajax({
-        url: 'https://secure2.convio.net/txfree/site/CRSurveyAPI',
-        type: 'post',
-        dataType: 'json',
-        data: $('form#petition').serialize(),
-        success: function(data) {
-                   $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
-                 }
+$(function() {
+  $('input#submitButton').click(function() {
+
+var dataString = 'survey_id=4011&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
+//alert (dataString);return false;
+$.ajax({
+  type: "POST",
+  url: "http://www.tfn.org/site/Survey",
+  data: dataString,
+  success: function() {
+     $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
     });
+  }
+});
+preventDefault();
+
+  });
 });
 
     </script>
@@ -201,6 +207,7 @@ $('input#submitButton').click( function() {
            <input type="text" name="cons_last_name" id="cons_last_name"  maxlength="50" value="Last name" onFocus="if(this.value == 'Last name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Last name';}" style="margin-bottom: 3px;" class="center-block" />
            <input type="text" name="cons_email" id="cons_email"  maxlength="255" value="Email" onFocus="if(this.value == 'Email') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Email';}" style="margin-bottom: 3px;" class="center-block" />
            <input type="text" name="cons_zip_code" id="cons_zip_code" size="20" maxlength="255" value="Zip" onFocus="if(this.value == 'Zip') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Zip';}" style="margin-bottom: 3px;" class="center-block" />
+           <input type="text" name="cons_birth_date" id="cons_birth_date" size="20" maxlength="255" value="Date of Birth (use MM/DD/YYYY)" onFocus="if(this.value == 'Date of Birth') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Date of birth';}" style="margin-bottom: 3px;" class="center-block" />
            <span class="hidden"><input type="text" name="denySubmit" id="denySubmit" value="" alt="This field is used to prevent form submission by scripts." />&nbsp;Please leave this field empty</span>
            <input type="hidden" name="SURVEY_ID" id="SURVEY_ID" value="4001" />
            <br />
