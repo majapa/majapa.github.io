@@ -128,6 +128,7 @@ fixedElements: '.logo',
         });
 
 $('input#submitButton').click( function() {
+  preventDefault();
     $.ajax({
         url: 'https://secure2.convio.net/txfree/site/CRSurveyAPI',
         type: 'post',
