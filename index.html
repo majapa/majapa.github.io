@@ -134,7 +134,7 @@ var dataString = 'survey_id=4011&cons_first_name=' + f_name + '&cons_last_name='
 //alert (dataString);return false;
 $.ajax({
   type: "POST",
-  url: "http://www.tfn.org/site/Survey",
+  url: "https://secure2.convio.net/txfree/site/CRSurveyAPI",
   data: dataString,
   success: function() {
      $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
@@ -144,6 +144,7 @@ $.ajax({
 preventDefault();
 
   });
+});
 });
 
     </script>
