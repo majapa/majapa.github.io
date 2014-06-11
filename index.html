@@ -134,6 +134,10 @@ var dataString = 'survey_id=4011&cons_first_name=' + f_name + '&cons_last_name='
 //alert (dataString);return false;
 $.ajax({
   type: "POST",
+  method: 'submitSurvey',
+  v: '1.0',
+  api_key: 'f74kbb8kl',
+  survey_id: '4001',
   url: "https://secure2.convio.net/txfree/site/CRSurveyAPI",
   data: dataString,
   success: function() {
