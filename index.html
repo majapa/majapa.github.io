@@ -128,7 +128,7 @@ fixedElements: '.logo',
         });
 
 $('input#submitButton').click(function() {
-
+preventDefault();
 var dataString = 'survey_id=4011&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
 //alert (dataString);return false;
 $.ajax({
@@ -144,7 +144,7 @@ $.ajax({
     });
   }
 
-preventDefault();
+
 });
 
 
