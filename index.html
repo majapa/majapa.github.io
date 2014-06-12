@@ -116,17 +116,29 @@ fixedElements: '.logo',
 }
 });
 
-$('#submitButton').click(function() {
-var dataString = '&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
+$('#submitButton').submit(function(e) {
+e.preventDefault();
+	submitSurvey();
+});
 
+function submitSurvey() {
+	var first_name=jQuery('#cons_first_name').val();
+	var last_name=jQuery('#cons_last_name').val();
+	var email=jQuery('#cons_email').val();
+	var zip=jQuery('#cons_zip_code').val();
+	var dob_month = document.getElementById("cons_birth_date_MONTH").value;
+	var dob_day = document.getElementById("cons_birth_date_DAY").value;
+	var dob_year = document.getElementById("cons_birth_date_YEAR").value;
+	var birthday = dob_year+'-'+dob_month+'-'+dob_day;
+	var cons_info_component=jQuery('#cons_info_component').val();
+	var survey_id=jQuery('#SURVEY_ID').val();
 preventDefault();
 
 $.ajax({
-  type: 'POST',
+  type: "POST",
   url: "https://secure2.convio.net/txfree/site/CRSurveyAPI",
   datatype: 'json',
   data: {
-    dataString,
     'method': 'submitSurvey',
 			api_key: 'f74kbb8kl',
 			'v': '1.0',
