@@ -127,11 +127,10 @@ fixedElements: '.logo',
 }
         });
 
-$('input#submitButton').click(function() {
+$('#submitButton').click(function() {
 preventDefault();
 var dataString = '&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
-//alert (dataString);return false;
-$.ajax({
+$.ajax(
   type: 'POST',
   method: 'submitSurvey',
   v: '1.0',
@@ -142,7 +141,7 @@ $.ajax({
   success: function() {
      $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
     }
-  });
+);
 
 
 });
@@ -202,7 +201,7 @@ $.ajax({
 
 <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
 <div id="petitionform">
-           <form method="POST" action="http://www.tfn.org/site/Survey" style="" id="petition" class="text-center center-block">
+           <form method="POST" action="" style="" name="petition" id="petition" class="text-center center-block">
            <input type="hidden" name="cons_info_component" id="cons_info_component" value="t" />
            <input type="text" name="cons_first_name" id="cons_first_name"  maxlength="50" value="First name" onFocus="if(this.value == 'First name') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'First name';}" style="margin-bottom: 3px;" class="center-block" />
 
