@@ -134,12 +134,23 @@ preventDefault();
 
 $.ajax({
   type: 'POST',
-  method: 'submitSurvey',
-  v: '1.0',
-  api_key: 'f74kbb8kl',
-  survey_id: '4011',
   url: "https://secure2.convio.net/txfree/site/CRSurveyAPI",
-  data: dataString,
+  datatype: 'json',
+  data: {dataString,
+    'method': 'submitSurvey',
+			api_key: 'f74kbb8kl',
+			'v': '1.0',
+			'response_format': 'json',
+			'auth': '[[S86:true]]',
+			'cons_id': '[[S1:cons_id]]',
+			'cons_first_name': first_name,
+			'cons_last_name': last_name,
+			'cons_email': email,
+			'cons_zip_code': zip,
+			'birth_date': birthday,
+			'cons_info_component': zip,
+			'survey_id': '4001',
+       }
   success: function() {
      $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
    }
