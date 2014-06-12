@@ -130,7 +130,7 @@ fixedElements: '.logo',
 $('#submitButton').click(function() {
 preventDefault();
 var dataString = '&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
-$.ajax(
+$.ajax({
   type: 'POST',
   method: 'submitSurvey',
   v: '1.0',
@@ -141,7 +141,7 @@ $.ajax(
   success: function() {
      $('#petitionform').replaceWith("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
    };
- )
+ });
 });
 
 
