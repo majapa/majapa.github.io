@@ -112,7 +112,7 @@ if(screen.width < 768) {
       }
             });
 } else {
- $('#fullpage').fullpage(
+ $('#fullpage').fullpage({
         verticalCentered: false,
 slidesColor: ['#ffffff', '#ededf0', '#ffffff'],
 loopBottom: true,
@@ -121,7 +121,10 @@ navigation: true,
 css3: true,
 paddingBottom: '40px',
 fixedElements: '.logo',
-);
+});
+
+
+}
         });
 
 $('#submitButton').click(function() {
