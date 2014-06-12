@@ -101,18 +101,9 @@ sm-icon {
 
         $(document).ready(function() {
 if(screen.width < 768) {
-            // bind 'myForm' and provide a simple callback function
-            $('#petition').ajaxForm({
-                target: '#petitionform',
-                success: function() {
-        $('#petitionform').html("<div id=\"message\"></div>");
-        $('#message').html("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4>")
-        .append("<p>Can you share this on Facebook and Twitter?</p>")
 
-      }
-            });
 } else {
- $('#fullpage').fullpage({
+  $('#fullpage').fullpage({
         verticalCentered: false,
 slidesColor: ['#ffffff', '#ededf0', '#ffffff'],
 loopBottom: true,
@@ -121,9 +112,9 @@ navigation: true,
 css3: true,
 paddingBottom: '40px',
 fixedElements: '.logo',
-});
+}),
 }
-        });
+});
 
 $('#submitButton').click(function() {
 var dataString = '&cons_first_name=' + f_name + '&cons_last_name=' + l_name + '&cons_email=' + email + '&cons_zip_code=' + zip + '&cons_birth_date' + dob;
