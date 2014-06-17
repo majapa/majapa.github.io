@@ -41,7 +41,7 @@ var quizJSON = {
                 {"option": "Vindicated",           "correct": true},
                 {"option": "Forgotten",  "correct": false} // no comma here
             ],
-            "correct": "<p><span>You got it - who could forget those good ol' days of Communist witchhunts? Totalyl justified.</span> <a href='http://tfninsider.org/2009/10/21/more-mcleroy-malarkey-part-1/' target='_blank'>McLeroy circulated a note to the U.S. History curriculum panel stating</a>: &#34;Read the latest on McCarthy – he was basically vindicated.&#34; How he was vindicated was not detailed by McLeroy.</p>",
+            "correct": "<p><span>You got it - who could forget those good ol' days of Communist witchhunts? Totally justified.</span> <a href='http://tfninsider.org/2009/10/21/more-mcleroy-malarkey-part-1/' target='_blank'>McLeroy circulated a note to the U.S. History curriculum panel stating</a>: &#34;Read the latest on McCarthy – he was basically vindicated.&#34; How he was vindicated was not detailed by McLeroy.</p>",
             "incorrect": "<p><span>C'mon, where's your support for freedom-loving non-Commies?</span> <a href='http://tfninsider.org/2009/10/21/more-mcleroy-malarkey-part-1/' target='_blank'>McLeroy circulated a note to the U.S. History curriculum panel stating</a>: &#34;Read the latest on McCarthy – he was basically vindicated.&#34; How he was vindicated was not detailed by McLeroy.</p>" // no comma here
         },
         { // Question 4
