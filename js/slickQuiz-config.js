@@ -21,8 +21,8 @@ var quizJSON = {
                 {"option": "The Supreme Court",     "correct": false},
                 {"option": "Men",      "correct": true} // no comma here
             ],
-            "correct": "<p><span>Yup.</span> During a board discussion about civil rights, former SBOE chairman Don McLeroy said, &quot;For instance, the women’s right to vote. The women didn’t vote on it, the men did. The men passed it for the women.&quot;</p>",
-            "incorrect": "<p><span>The SBOE disagrees.</span> During a board discussion about civil rights, former SBOE chairman Don McLeroy said, &quot;For instance, the women’s right to vote. The women didn’t vote on it, the men did. The men passed it for the women.&quot;</p>" // no comma here
+            "correct": "<p><span>Yup.</span> During a board discussion about civil rights, former SBOE chairman Don McLeroy said, &#34;For instance, the women’s right to vote. The women didn’t vote on it, the men did. The men passed it for the women.&#34;</p>",
+            "incorrect": "<p><span>The SBOE disagrees.</span> During a board discussion about civil rights, former SBOE chairman Don McLeroy said, &#34;For instance, the women’s right to vote. The women didn’t vote on it, the men did. The men passed it for the women.&#34;</p>" // no comma here
         },
         { // Question 2 - Multiple Choice, Multiple True Answers, Single True Answer
             "q": "According to the SBOE, which of these three factors is the <u>least significant</u> cause of the Civil War?",
@@ -51,8 +51,8 @@ var quizJSON = {
                 {"option": "Are a helpful tool in diplomacy.",     "correct": false},
                 {"option": "Undermine U.S. sovereignty.",      "correct": true} // no comma here
             ],
-            "correct": "<p><span>Heck yeah - Texas should just secede from the world!</span> In a last minute change to the social studies curriculum standards, the &quot;black helicopter&quot; crowd at the SBOE inserted this paranoid attack on international cooperation: &quot;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&quot;</p>",
-            "incorrect": "<p><span>Ha, you probably did Model UN.</span> In a last minute change to the social studies curriculum standards, the &quot;black helicopter&quot; crowd at the SBOE inserted this paranoid attack on international cooperation: &quot;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&quot;</p>" // no comma here
+            "correct": "<p><span>Heck yeah - Texas should just secede from the world!</span> In a last minute change to the social studies curriculum standards, the &#34;black helicopter&#34; crowd at the SBOE inserted this paranoid attack on international cooperation: &#34;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&#34;</p>",
+            "incorrect": "<p><span>Ha, you probably did Model UN.</span> In a last minute change to the social studies curriculum standards, the &#34;black helicopter&#34; crowd at the SBOE inserted this paranoid attack on international cooperation: &#34;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&#34;</p>" // no comma here
         },
         { // Question 5
             "q": "True or False: Dinosaurs were present on Noah's Ark.",
