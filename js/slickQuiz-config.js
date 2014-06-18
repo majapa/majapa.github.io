@@ -6,7 +6,7 @@ var quizJSON = {
     "info": {
         "name":    "Are you smarter than a Texas State Board of Education member?",
         "main":    "<p>The State Board of Education is comprised of 15 elected, partisan members -- each representing on average more than 1.5 million Texans -- who write curriculum standards and approve textbooks for the entire state’s public school system. Certainly, a position of so much power requires candidates who can rise to those standards, right? After taking this quiz, you may not be so sure...</p>",
-        "results": "<h5>Want to get involved?</h5><p>This summer and fall, the State Board of Education is reviewing and approving social studies and history textbooks that will be used for our students - for all of Texas, and possibly across the nation - for the next 10 years. <a href='www.tfn.org/history'>Sign the petition today at www.tfn.org/history</a></p>",
+        "results": "<h2>Want to get involved?</h2><p>This summer and fall, the State Board of Education is reviewing and approving social studies and history textbooks that will be used for our students - for all of Texas, and possibly across the nation - for the next 10 years.</p><p><strong><h2>Grab a pledge card from the TFN table, sign it, and get involved!</h2>",
         "level1":  "You're just what the State Board of Education is looking for!",
         "level2":  "You've got potential, but you've got a little too much *actual* history knowledge",
         "level3":  "You could either be an SBOE member, or a functioning member of society.",
