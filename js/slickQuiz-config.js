@@ -6,12 +6,12 @@ var quizJSON = {
     "info": {
         "name":    "Are you smarter than a State Board of Education member?",
         "main":    "<p>The Texas State Board of Education is composed of 15 elected, partisan members -- each representing more than 1.5 million Texans -- who write curriculum standards and approve textbooks for the entire state’s public school system. Certainly, a position of so much power requires candidates who can rise to those standards, right? After taking this quiz, you may not be so sure...</p>",
-        "results": "<h2 style='color: red;'>Want to get involved?</h2><p>This summer and fall, the State Board of Education is reviewing and approving social studies and history textbooks that will be used for our students - for all of Texas, and possibly across the nation - for the next 10 years.</p><p><strong><h2 style='color: blue;'>Grab a pledge card from the TFN table, sign it, and get involved!</h2>",
-        "level1":  "<span style='color: green;'>You're just what the State Board of Education is looking for!</span>",
-        "level2":  "<span style='color: green;'>You've got potential, but you've got a little too much *actual* history knowledge.</span>",
-        "level3":  "<span style='color: green;'>You could either be an SBOE member, or a functioning member of society.</span>",
+        "results": "<h2 style='color: red;'>Want to get involved?</h2><p>This summer and fall, the State Board of Education is reviewing and approving social studies and history textbooks that will be used by Texas students - and possibly students across the nation - for the next 10 years.</p><p><strong><h2 style='color: blue;'>Grab a pledge card from the TFN table, sign it, and get involved!</h2>",
+        "level1":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
+        "level2":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
+        "level3":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
         "level4":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
-        "level5":  "<span style='color: green;'>Sorry, you're *too* smart to be an SBOE member.</span>" // no comma here
+        "level5":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>" // no comma here
     },
     "questions": [
         { // Question 1 - Multiple Choice, Single True Answer
@@ -55,13 +55,13 @@ var quizJSON = {
             "incorrect": "<p><span>Ha, you probably did Model UN.</span> In a last minute change to the social studies curriculum standards, the &#34;black helicopter&#34; crowd at the SBOE inserted this paranoid attack on international cooperation: &#34;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&#34;</p>" // no comma here
         },
         { // Question 5
-            "q": "True or False: Dinosaurs were present on Noah's Ark. (According to an SBOE member.)",
+            "q": "True or False: Dinosaurs were present on Noah's Ark (according to an SBOE member).",
             "a": [
                 {"option": "True",    "correct": true},
                 {"option": "False",     "correct": false} // no comma here
             ],
-            "correct": "<p><span>Yup, and the velicoraptors kept things very interesting for those 40 days and 40 nights.</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six year old kids in his class seemed skeptical.)</p>",
-            "incorrect": "<p><span>Whoa there, Darwin, got any <em>proof</em>?</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six year old kids in his class seemed skeptical.)</p>" // no comma here
+            "correct": "<p><span>Yup, and the velicoraptors kept things very interesting for those 40 days and 40 nights.</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six-year-old kids in his class seemed skeptical.)</p>",
+            "incorrect": "<p><span>Whoa there, Darwin, got any <em>proof</em>?</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six-year-old kids in his class seemed skeptical.)</p>" // no comma here
         },
         { // Question 6
             "q": "Which of these topics are not mentioned at all in Texas' new history curriculum?",
@@ -71,11 +71,11 @@ var quizJSON = {
                 {"option": "Sharecropping",      "correct": false},
                 {"option": "All of the above",     "correct": true} // no comma here
             ],
-            "correct": "<p><span>You got it - all three are just footnotes worthy of forgetting in our flawless, awesome history.</span> Although students must study Jefferson Davis’ speeches, there is no mention of any of these three unsavory topics in post-Civil War U.S. history standards.</p>",
+            "correct": "<p><span>You got it - all three are just insignificant footnotes in our flawless, awesome history.</span> Although students must study Jefferson Davis’ speeches, there is no mention of any of these three unsavory topics in post-Civil War U.S. history standards.</p>",
             "incorrect": "<p><span>Well yes, they left that one out, but they left the others out, too.</span> Although students must study Jefferson Davis’ speeches, there is no mention of any of these three unsavory topics in post-Civil War U.S. history standards.</p>" // no comma here
         },
         { // Question 7
-            "q": "In 2010, SBOE member David Bradley promised $1000 to anyone who could prove the existence of what?",
+            "q": "In 2010, SBOE member David Bradley promised $1,000 to anyone who could prove the existence of what?",
             "a": [
                 {"option": "Aliens",    "correct": false},
                 {"option": "Mermaids",     "correct": false},
