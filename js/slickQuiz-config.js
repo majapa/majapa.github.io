@@ -31,8 +31,8 @@ var quizJSON = {
                 {"option": "States’ rights",   "correct": false},
                 {"option": "Sectionalism",               "correct": false} // no comma here
             ],
-            "correct": "<p><span>Yep, you got it: slavery gets third billing in the Civil War.</span> By a deliberate vote of the board, the current social studies curriculum standards list the causes of the Civil War in the following order: states’ rights, sectionalism, and slavery.</p>",
-            "incorrect": "<p><span>Nope: slavery ranks last.</span> By a deliberate vote of the board, the current social studies curriculum standards list the causes of the Civil War in the following order: states’ rights, sectionalism, and slavery.</p>" // no comma here
+            "correct": "<p><span>Yep, you got it: slavery gets third billing in the Civil War.</span> By a deliberate vote of the board, the current social studies curriculum standards list the causes of the Civil War in the following order: sectionalism, states’ rights, and slavery.</p>",
+            "incorrect": "<p><span>Nope: slavery ranks last.</span> By a deliberate vote of the board, the current social studies curriculum standards list the causes of the Civil War in the following order: sectionalism, states’ rights, and slavery.</p>" // no comma here
         },
         { // Question 3 - Multiple Choice, Multiple True Answers, Select All
             "q": "Fill in the blank: Former SBOE chairman Don McLeroy once instructed a panel of curriculum reviewers that infamous red-baiter Joseph McCarthy had been _______ by history.",
