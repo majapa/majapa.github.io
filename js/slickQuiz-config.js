@@ -6,7 +6,7 @@ var quizJSON = {
     "info": {
         "name":    "Are you smarter than a State Board of Education member?",
         "main":    "<p>The Texas State Board of Education is composed of 15 elected, partisan members -- each representing more than 1.5 million Texans -- who write curriculum standards and approve textbooks for the entire state’s public school system. Certainly, a position of so much power requires candidates who can rise to those standards, right? After taking this quiz, you may not be so sure...</p>",
-        "results": "<h2 style='color: red;'>Want to get involved?</h2><p>This summer and fall, the State Board of Education is reviewing and approving social studies and history textbooks that will be used by Texas students - and possibly students across the nation - for the next 10 years.</p><p><strong><h2 style='color: blue;'>Grab a pledge card from the TFN table, sign it, and get involved!</h2>",
+        "results": "<h2 style='color: red;'>Great job. Now you can help even more.</h2><form method='POST' action='' style='' name='petition' id='petition' class='text-center center-block'><input type='hidden' name='cons_info_component' id='cons_info_component' value='t' ><input type='text' name='cons_first_name' id='cons_first_name'  maxlength='50' value='First name' onFocus='if(this.value == 'First name') {this.value = '';}' onBlur='if (this.value == '') {this.value = 'First name';}' style='margin-bottom: 3px;' class='center-block' > <input type='text' name='cons_last_name' id='cons_last_name'  maxlength='50' value='Last name' onFocus='if(this.value == 'Last name') {this.value = '';}' onBlur='if (this.value == '') {this.value = 'Last name';}' style='margin-bottom: 3px;' class='center-block' >           <input type='text' name='cons_email' id='cons_email'  maxlength='255' value='Email' onFocus='if(this.value == 'Email') {this.value = '';}' onBlur='if (this.value == '') {this.value = 'Email';}' style='margin-bottom: 3px;' class='center-block' >           <input type='text' name='cons_zip_code' id='cons_zip_code' size='20' maxlength='255' value='Zip' onFocus='if(this.value == 'Zip') {this.value = '';}' onBlur='if (this.value == '') {this.value = 'Zip';}' style='margin-bottom: 3px;' class='center-block' >           <input type='text' name='cons_birth_date' id='cons_birth_date' size='20' maxlength='255' value='Date of Birth (use MMDDYYYY)' onFocus='if(this.value == 'Date of Birth') {this.value = '';}' onBlur='if (this.value == '') {this.value = 'Date of birth';}' style='margin-bottom: 3px;' class='center-block' >           <span class='hidden'><input type='text' name='denySubmit' id='denySubmit' value='' alt='This field is used to prevent form submission by scripts.' >&nbsp;Please leave this field empty</span>           <input type='hidden' name='SURVEY_ID' id='SURVEY_ID' value='4001' >           <br >           <input type='submit' style='color: red;' name='submitButton' id='submitButton' value='Submit' class='' ><br >         <form>",
         "level1":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
         "level2":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
         "level3":  "<span style='color: green;'>Looks like you got a good schoolin' - too good for the SBOE.</span>",
@@ -54,15 +54,6 @@ var quizJSON = {
             "correct": "<p><span>Heck yeah - Texas should just secede from the world!</span> In a last minute change to the social studies curriculum standards, the &#34;black helicopter&#34; crowd at the SBOE inserted this paranoid attack on international cooperation: &#34;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&#34;</p>",
             "incorrect": "<p><span>Ha, you probably did Model UN.</span> In a last minute change to the social studies curriculum standards, the &#34;black helicopter&#34; crowd at the SBOE inserted this paranoid attack on international cooperation: &#34;evaluate efforts by global organizations to undermine U.S. sovereignty through the use of treaties.&#34;</p>" // no comma here
         },
-        { // Question 5
-            "q": "True or False: Dinosaurs were present on Noah's Ark (according to an SBOE member).",
-            "a": [
-                {"option": "True",    "correct": true},
-                {"option": "False",     "correct": false} // no comma here
-            ],
-            "correct": "<p><span>Yup, and the velicoraptors kept things very interesting for those 40 days and 40 nights.</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six-year-old kids in his class seemed skeptical.)</p>",
-            "incorrect": "<p><span>Whoa there, Darwin, got any <em>proof</em>?</span> In the documentary “The Revisionaries”, former SBOE chair Don McLeroy proudly announces to children in his Sunday School class that dinosaurs were present on Noah’s Ark. (Even the six-year-old kids in his class seemed skeptical.)</p>" // no comma here
-        },
         { // Question 6
             "q": "Which of these topics are not mentioned at all in Texas' new history curriculum?",
             "a": [
@@ -73,16 +64,6 @@ var quizJSON = {
             ],
             "correct": "<p><span>You got it - all three are just insignificant footnotes in our flawless, awesome history.</span> Although students must study Jefferson Davis’ speeches, there is no mention of any of these three unsavory topics in post-Civil War U.S. history standards.</p>",
             "incorrect": "<p><span>Well yes, they left that one out, but they left the others out, too.</span> Although students must study Jefferson Davis’ speeches, there is no mention of any of these three unsavory topics in post-Civil War U.S. history standards.</p>" // no comma here
-        },
-        { // Question 7
-            "q": "In 2010, SBOE member David Bradley promised $1,000 to anyone who could prove the existence of what?",
-            "a": [
-                {"option": "Aliens",    "correct": false},
-                {"option": "Mermaids",     "correct": false},
-                {"option": "The separation of church and state in the U.S. Constitution",      "correct": true} // no comma here
-            ],
-            "correct": "<p><span>You and Bradley are more alike than you think.</span> Despite numerous attempts to collect the reward, David Bradley has not yet conceded that there is a Constitutionally-protected separation of church and state.</p>",
-            "incorrect": "<p><span>No, Bradley probably <em>does</em> believe in the existence of that.</span> Despite numerous attempts to collect the reward, David Bradley has not yet conceded that there is a Constitutionally-protected separation of church and state.</p>" // no comma here
         } // no comma here
     ]
 };

@@ -11,7 +11,7 @@
     <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
     <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">
-
+    <link href="css/fonts.css" media="screen" rel="stylesheet" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,11 +20,77 @@
     <![endif]-->
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <style type="text/css">
+    .chalkboard {
+      background-color: #275112;
+      width: 900px;
+      }
+
+input[type=submit] {
+    background: url(images/submit.png);
+    border: 0;
+    display: block;
+    width: 155px;
+    height: 35px;
+    margin-top: 3px;
+}
+
+    </style>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+
+        <script>
+    $('#petition').submit(function(e) {
+    e.preventDefault();
+      submitSurvey();
+    });
+
+    function submitSurvey() {
+      var first_name=jQuery('#cons_first_name').val();
+      var last_name=jQuery('#cons_last_name').val();
+      var email=jQuery('#cons_email').val();
+      var zip=jQuery('#cons_zip_code').val();
+      var dob_month = document.getElementById("cons_birth_date_MONTH").value;
+      var dob_day = document.getElementById("cons_birth_date_DAY").value;
+      var dob_year = document.getElementById("cons_birth_date_YEAR").value;
+      var birthday = dob_year+'-'+dob_month+'-'+dob_day;
+      var cons_info_component=jQuery('#cons_info_component').val();
+      var survey_id=jQuery('#SURVEY_ID').val();
+
+    $.ajax({
+      type: "POST",
+      url: "https://secure2.convio.net/txfree/site/CRSurveyAPI",
+      datatype: 'json',
+      data: {
+        'method': 'submitSurvey',
+          api_key: 'f74kbb8kl',
+          'v': '1.0',
+          'response_format': 'json',
+          'auth': '[[S86:true]]',
+          'cons_id': '[[S1:cons_id]]',
+          'birth_date': dob,
+          'cons_info_component': zip,
+          'survey_id': '4001'
+        },
+      success: function() {
+         $('#petitionform').innerHTML("<i class=\"fa fa-2x fa-check-square-o\"></i><h4>Thank you for signing the petition.</h4><p>Can you share this on Facebook and Twitter?</p>")
+       },
+     });
+     }
+
+
+        </script>
 
   </head>
   <body id="slickQuiz">
+    <div class="row">
+             <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0">&nbsp;
+             </div>
+   </div>
+   <div class="row">
+             <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-8 col-md-offset-2">
+
     <h1 class="quizName"><!-- where the quiz name goes --></h1>
 
 <div class="quizArea">
@@ -55,5 +121,7 @@
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+</div>
+</div>
   </body>
 </html>

@@ -1,29 +1,16 @@
 /* QUIZ STYLES */
 /* Styles to prettify the quiz page */
 
-html {
-    background: #eee;
-}
+body {background-color: #275112;}
 
-body {
-    width: 800px;
-    margin: 0 auto;
-    border: 2px solid #ccc;
-    border-top: none;
-    background: #fff;
-    padding: 20px;
-    font-family: Trebuchet, Arial,Helvetica,sans-serif;
-    font-size: 16px;
-    color: #353535;
-    line-height: 1.5em;
-}
+p {  font-family: 'alpine_scriptmedium'; font-size: 1.5em; color: #FFE1DD;}
 
-h1,h2,h3,h4,h5,h6 {font-weight: bold;}
+h1,h2,h3,h4,h5,h6 {font-weight: bold; font-family: 'kg_ten_thousand_reasons_altRg'; color: #FFFBDD;}
 
 h1 {
     font-size: 26px;
     margin: 0 0 20px;
-    color: #0C4569;
+    color: #D6D5FF;
 }
 h2 {
     font-size: 22px;
@@ -32,6 +19,7 @@ h2 {
 h3 {
     font-size: 18px;
     margin: 15px 0 10px;
+    line-height: 135%;
 }
 h4 {
     font-size: 16px;
@@ -63,6 +51,8 @@ ol li { list-style-type: decimal; margin-left: 20px; }
     -moz-border-radius: 5px;
     border-radius: 5px;
 	text-decoration: none;
+  font-family: 'a_song_for_jennifer_boldRg';
+  font-size: 1.4em;
 }
 .button:hover {
     background-color:darkslategray;
@@ -92,8 +82,10 @@ ol li { list-style-type: decimal; margin-left: 20px; }
 }
 
 .questionCount {
-    font-size: 14px;
+    display: none !important;
+    font-size: 1.1em;
     font-style: italic;
+    font-family: 'hashtagregular';
 }
 .questionCount span {
     font-weight: bold;
@@ -110,6 +102,9 @@ ol.questions li {
 ul.answers {
     margin-left: 20px;
     margin-bottom: 20px;
+    font-family: 'alpine_scriptmedium';
+    font-size: 1.6em;
+    color: #FFE8D3;
 }
 
 ul.responses li {
@@ -121,9 +116,11 @@ ul.responses li p span {
     font-size: 18px;
 }
 ul.responses li.correct p span {
-    color: #6C9F2E;
+    color: #CCCAFF;
+    font-size: 1.2em;
 }ul.responses li.incorrect p span {
-    color: #B5121B;
+    color: #FAFFAC;
+    font-size: 1.2em;
 }
 
 .quizResults h3 {
