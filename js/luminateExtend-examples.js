@@ -4,7 +4,7 @@
     apiKey: 'f74kbb8kl',
     path: {
       nonsecure: 'http://tfn.org/site/',
-      secure: 'https://secure2.convio.net/txfree/site/'
+      secure: 'https://secure.tfn.org/'
     }
   });
 
