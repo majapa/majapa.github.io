@@ -4,7 +4,7 @@
     apiKey: 'f74kbb8kl',
     path: {
       nonsecure: 'http://tfn.org/site/',
-      secure: 'https://secure.tfn.org/'
+      secure: 'https://secure2.convio.net/txfree/site/'
     }
   });
 
@@ -22,7 +22,10 @@
       luminateExtend.api({
         api: 'cons',
         callback: getUserCallback,
-        data: 'method=getUser',
+        data: {
+        'method': 'getUser',
+        'send_autoresponder': 'true'
+              },
         requestType: 'POST',
         requiresAuth: true
       });
@@ -146,7 +149,7 @@
                                      '</div>' +
                                      '<div class="well">' +
                                        '<p>Thank you for your donation of $' + data.donationResponse.donation.amount.decimal + '.</p>' +
-                                       '<p>Your confirmation code is ' + data.donationResponse.donation.confirmation_code + '.</p>' +
+                                       '<p>You will receive a confirmation email shortly.</p>' +
                                      '</div>');
         }
       }
